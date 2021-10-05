@@ -1,0 +1,11 @@
+versioin: "3"
+
+
+services:
+  app:
+    build: .
+    container_name: dev-app_product
+    ports:
+     - "9000":9000
+    volumes:
+     - .:/go/src/ 
